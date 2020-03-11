@@ -1,0 +1,15 @@
+stages:
+  - baseline
+  - one
+  - two
+
+include: 
+  - ci/envdump.yml
+  - ci/placeholders.yml
+
+#job:
+#  stage: one
+#  tags:
+#    - shell
+#  script:
+#    - /bin/true

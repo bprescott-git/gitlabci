@@ -1,0 +1,13 @@
+_one:
+  stage: one
+  tags:
+    - shell
+  script:
+    - /bin/true
+
+_two:
+  stage: two
+  tags:
+    - shell
+  script:
+    - /bin/true

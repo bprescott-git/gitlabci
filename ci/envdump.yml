@@ -1,0 +1,9 @@
+pipelinesource:
+  stage: baseline
+  tags:
+    - shell
+  script:
+    - /usr/bin/env | /usr/bin/sort
+  rules:
+    - if: '$CI_PIPELINE_SOURCE =~ /(push|web|trigger|schedule|api|pipeline|external|chat|merge_request_event|external_pull_request_event)/'
+
